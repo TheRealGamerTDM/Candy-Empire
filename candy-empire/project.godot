@@ -1,0 +1,37 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Candy Empire"
+run/main_scene="res://clicker_screen.tscn"
+config/features=PackedStringArray("4.6", "Forward Plus")
+config/icon="uid://431hsmv8s1lb"
+
+[autoload]
+
+CrazyGamesBridge="*uid://bdooqhy1v3w3p"
+CrazyGames="*uid://bgovgtrhvq71q"
+
+[display]
+
+window/stretch/mode="canvas_items"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/crazygames/plugin.cfg")
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
